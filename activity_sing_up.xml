@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bz9vd54"
+            android:orientation="vertical"
+            android:padding="10dp"
+            tools:context=".SingUp">
+
+            <ImageView
+                android:id="@+id/Safekidz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/full_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Safekidz"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:text="Full Name"
+                android:textColor="@color/Black" />
+
+            <EditText
+                android:id="@+id/et_fullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/full_name"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/shape_edittext"
+                android:drawableLeft="@drawable/full_name"
+                android:padding="10dp"
+                android:textColor="@color/Black" />
+
+            <TextView
+                android:id="@+id/tv_emailAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_fullname"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="14dp"
+                android:text="Email Adress"
+                android:textColor="@color/Black"
+
+                />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_emailAddress"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/shape_edittext"
+                android:drawableLeft="@drawable/email"
+                android:padding="10dp"
+                android:textColor="@color/Black" />
+
+            <TextView
+                android:id="@+id/tv_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_email"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="14dp"
+                android:text="Password"
+                android:textColor="@color/Black" />
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_emailAddress"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/shape_edittext"
+                android:drawableLeft="@drawable/pasword"
+                android:drawableRight="@drawable/eye_icon"
+                android:inputType="numberPassword"
+                android:padding="10dp"
+                android:textColor="@color/Black" />
+
+
+            <Button
+
+                android:id="@+id/btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="120dp"
+                android:background="@drawable/button_icon"
+                android:text="Create free account" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/Dont"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="60dp"
+                android:text="or Singup with"
+                android:textColor="@color/Black" />
+
+            <ImageView
+
+                android:id="@+id/img_fb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/Dont"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="70dp"
+                android:src="@drawable/facebook_icon" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/Dont"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="70dp"
+                android:src="@drawable/google_icon" />
+
+
+            <TextView
+                android:id="@+id/Dont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="35dp"
+                android:text="Already have account ?"
+                android:textColor="@color/Black" />
+
+            <TextView
+                android:id="@+id/textview_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/Dont"
+                android:text="Login"
+                android:textColor="@color/colorPrimary" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
